@@ -1,0 +1,48 @@
+@font-face {
+    font-family: stylish;
+    src: url(fonts/659dbdfd5a080be8d348316e_PP\ Neue\ Machina\ Inktrap\ Medium.woff);
+}
+@font-face {
+    font-family: satoshi;
+    src: url(fonts/659dbdfd5a080be8d3483173_Satoshi-Variable.ttf);
+}
+body{
+    transition: background-color ease-out .5s;
+}
+.bgvdo{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+body[theme="black"]{
+    background-color: black;
+    color: white;
+}
+body[theme="cyan"]{
+    background-color: #aedee0;
+}
+body[theme="skin"]{
+    background-color: #ef9d71;
+}
+body[theme="white"]{
+    background-color: white;
+    color: black;
+}
+.pg4 section::after{
+    content: "";
+    height: 0%;
+    width: 100%;
+    position: absolute;
+    transition: all ease .5s;
+    top: 0;
+    left: 0;
+      z-index: -1;
+    background-color: #2544ee;
+}
+.pg4 section:hover h1, h5{
+color: white;
+}
+.pg4 section:hover::after{
+    height: 100%;
+}
+ .stext span{
+    position: relative;
+}
